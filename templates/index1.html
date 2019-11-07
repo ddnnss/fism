@@ -1,0 +1,1019 @@
+{% load static %}
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from seventhqueen.com/themes/mybiz-html/mybnb/homepage.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2019 06:04:00 GMT -->
+<head>
+	<!-- Standard Meta -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SeventhQueen" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/less/base.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/less/header.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/less/theme.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/icon/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/less/custom.css' %}">
+
+	<link rel="icon" href="{% static 'assets/images/ico/favicon.ico' %}">
+
+	<script src="{% static 'assets/library/modernizr-custom.js' %}"></script>
+
+	<title>Главная Синий</title>
+
+</head>
+<body class="no-transition">
+<div id="page-wrapper">
+
+	<!--
+
+Default Header with a White Background & Dark text.
+
+-->
+
+	<!--DEFAULT HEADER-->
+
+	<header class="header-section ths header-shadow header-sticky header-slide-up equal-tablet-header-items equal-mobile-header-items header-transparent is-transparent">
+		<div class="header-content blue">
+
+			<div class="ui container grid">
+				<div class="header-item header-left flex-order-tablet-second flex-order-mobile-second flex-grow-tablet-true flex-grow-mobile-true">
+
+					<a href="/" class="logo item">
+						<img src="{% static 'assets/images/logo.png' %}" srcset="{% static 'assets/images/logo.png' %} 1x, {% static 'assets/images/logo.png' %} 2x" alt="mybnb logo" class="logo-transparent">
+
+						<img src="{% static 'assets/images/logo.png' %}" srcset="{% static 'assets/images/logo.png' %} 1x, {% static 'assets/images/logo.png' %} 2x" alt="mybnb logo">
+					</a>
+
+
+				</div>
+
+				<div class="header-item header-center flex-align-left flex-order-tablet-first flex-order-mobile-first flex-grow-large-desktop-true flex-grow-desktop-true flex-grow-tablet-false flex-grow-mobile-false">
+
+				</div>
+
+				<div class="header-item header-right flex-order-tablet-third flex-order-mobile-third flex-shrink-true flex-align-right">
+
+					<!-- Sidemenu Trigger -->
+					<a class="sidemenu-trigger close-sq hamburger hamburger-spin item hidden-desktop hidden-large-desktop" data-trigger-for="menu01">
+                   
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+					</a>
+
+					<!-- Include Menu -->
+
+					<!-- Header Menu-->
+
+					<div class="item menu-default burger-mobile-sidemenu burger-tablet-sidemenu sidemenu-open-right icons-left profile-priority slide-out-sq dimmed flexMenu dropdown-open-right" data-burger="menu01">
+
+						<ul class="main-menu">
+
+							<li><a href="{% url 'search' %}" class="item">
+								<span>АРЕНДА ПОМЕЩЕНИЯ</span>
+							</a>
+							</li>
+
+
+
+							<li><a href="{% url 'index' %}" class="item modal-ui-trigger" data-trigger-for="modal01">
+								<span>ГЛАВНАЯ ЖЕЛТАЯ</span>
+							</a>
+							</li>
+
+							<li><a href="#" class="item modal-ui-trigger" data-trigger-for="modal02">
+								<span>СМОТРЕТЬ НА КАРТЕ</span>
+							</a>
+							</li>
+							<li><a href="#" class="item modal-ui-trigger" data-trigger-for="modal02">
+								<span>О НАС</span>
+							</a>
+							</li>
+							<li><a href="#" class="item modal-ui-trigger" data-trigger-for="modal02">
+								<span>КОНТАКТЫ</span>
+							</a>
+							</li>
+							<li><a  class="item" data-trigger-for="modal02">
+								<span>|</span>
+							</a>
+							</li>
+							<li><a  class="item" data-trigger-for="modal02">
+								<span><img src="{% static 'assets/images/search.png' %}"></span>
+							</a>
+							</li>
+							  <li><a style="margin: 0;" href="my_profile.html" class="item" >
+                                <span><img src="{% static 'assets/images/user_1.png' %}"></span>
+                            </a>
+                            </li>
+
+
+
+						</ul>
+					</div>
+
+					<!-- End of Header Menu-->
+
+
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Hero Full Page -->
+	<div class="hero-search-full-page next-sq">
+
+		<!-- Hero Search -->
+		<!-- .thin .animate .shadow .colored -->
+
+
+		<div class="header-main-form">
+			<div class="header-main-form-item header-main-form-item__left">
+				<h3 style="color: #0B49A0 !important;">ищете помещение для нужд</h3>
+				<form>
+					<div class="div-c inline-3">
+						<div class="divided-column">
+							<input type="text" placeholder="ГОРОД">
+						</div>
+						<div class="divided-column">
+							<input type="text" placeholder="ВИД ПОМЕЩЕНИЯ">
+						</div>
+					</div>
+					<div class="div-c inline-3">
+						<div class="divided-column">
+							<input type="text" placeholder="ДАТА">
+						</div>
+						<div class="divided-column">
+							<input type="text" placeholder="ЦЕНА">
+						</div>
+					</div>
+					<button style="background: #0B49A0 !important;" type="submit">найти</button>
+
+				</form>
+
+
+			</div>
+			<div class="header-main-form-item header-main-form-item__right">
+				<h3 style="color: #0B49A0 !important;">или хотите сдать свое?</h3>
+				<form>
+					<div class="div-c inline-2">
+						<div class="divided-column">
+							<input type="text" placeholder="ИМЯ">
+						</div>
+						<div class="divided-column">
+							<input type="text" placeholder="ТЕЛЕФОН">
+						</div>
+					</div>
+					<button style="background: #0B49A0 !important;" type="submit">отправить</button>
+
+				</form>
+
+
+			</div>
+		</div>
+
+
+
+		<!-- Hero Big - Slick -->
+		<div class="sq-slick hero-big slide-up-sq" data-mobile-arrows="false" data-tablet-arrows="false" data-mobile-dots="true" data-tablet-dots="true" data-fade="true" data-speed="500" data-ease="linear">
+			<!-- .slide-up .fade .top .bottom -->
+
+			<!--Slide 01-->
+			<div class="">
+				<div class="caption-content">
+					<h1 class="font-weight-extrabold-sq"></h1>
+				</div>
+
+
+				<div class="image-wrapper">
+					<div class="image-inner">
+						<img class="image-sq" src="{% static 'assets/images/hero/hero_big_28.jpg' %}" alt="">
+					</div>
+				</div>
+			</div>
+
+			<!--Slide 02-->
+			<div>
+				<div class="caption-content">
+					<h1 class="font-weight-extrabold-sq"></h1>
+				</div>
+
+				<div class="caption-outside">
+					<a class="button anchor-sq" href="#top">
+						<i class="icon big icon-compass"></i>
+						<span>Find</span>
+					</a>
+				</div>
+
+				<div class="image-wrapper">
+					<div class="image-inner">
+						<img class="image-sq" src="{% static 'assets/images/hero/hero_big_29.jpg' %}" alt="">
+					</div>
+				</div>
+			</div>
+
+			<!--Slide 03-->
+			<div>
+				<div class="caption-content">
+					<h1 class="font-weight-extrabold-sq"></h1>
+				</div>
+
+				<div class="caption-outside">
+					<a class="button anchor-sq" href="#top">
+						<i class="icon big icon-compass"></i>
+						<span>Read</span>
+					</a>
+				</div>
+
+				<div class="image-wrapper">
+					<div class="image-inner">
+						<img class="image-sq" src="{% static 'assets/images/hero/hero_big_30.jpg' %}" alt="">
+					</div>
+				</div>
+			</div>
+
+			<!--Slide 04-->
+			<div>
+				<div class="caption-content">
+					<h1 class="font-weight-extrabold-sq"></h1>
+				</div>
+				<div class="caption-outside">
+					<a class="button anchor-sq" href="#top">
+						<i class="icon big icon-compass"></i>
+						<span>View</span>
+					</a>
+				</div>
+
+				<div class="image-wrapper">
+					<div class="image-inner">
+						<img class="image-sq" src="{% static 'assets/images/hero/hero_big_31.jpg' %}" alt="">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="ui layout" id="top">
+		<div class="ui grid container">
+			<div class="row">
+				<div class="ui twelve wide computer column">
+					<div class="typo-section-sq bottom-big">
+
+						<div class="typo-section-header-sq">
+							<h2 style="color: #0B49A0;" class="text-align-center-sq">01. Выбор помещений для аренды</h2>
+							<p class="text-align-center-sq">Найдите подходящее для себя помещение</p>
+						</div>
+
+							<div class="magic-grid photo-sq hover-default hover-center">
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<div class="image-sq">
+										<div class="image-wrapper">
+											<div class="image-inner">
+												<img class="image-sq" src="{% static 'assets/images/office.jpg' %}" alt="">
+											</div>
+										</div>
+									</div>
+
+									<!-- typography container-->
+									<a href="#" class="typo-sq">
+										<span class="typo-whitespace"></span>
+										<p class="typo-label-sq" data-label-before="" data-label-after="Изучить варианты"></p>
+										<p class="typo-title-sq">Офисные Помещения</p>
+									</a>
+
+								</div>
+							</div>
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<div class="image-sq">
+										<div class="image-wrapper">
+											<div class="image-inner">
+												<img class="image-sq" src="{% static 'assets/images/loft.jpg' %}" alt="">
+											</div>
+										</div>
+									</div>
+
+									<!-- typography container-->
+									<a href="#" class="typo-sq">
+										<span class="typo-whitespace"></span>
+										<p class="typo-label-sq" data-label-before="" data-label-after="Изучить варианты"></p>
+										<p class="typo-title-sq">Лофты</p>
+									</a>
+
+								</div>
+							</div>
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<div class="image-sq">
+										<div class="image-wrapper">
+											<div class="image-inner">
+												<img class="image-sq" src="{% static 'assets/images/studio.jpg' %}" alt="">
+											</div>
+										</div>
+									</div>
+
+									<!-- typography container-->
+									<a href="#" class="typo-sq">
+										<span class="typo-whitespace"></span>
+										<p class="typo-label-sq" data-label-before="" data-label-after="Изучить варианты"></p>
+										<p class="typo-title-sq">Студии</p>
+									</a>
+
+								</div>
+							</div>
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<div class="image-sq">
+										<div class="image-wrapper">
+											<div class="image-inner">
+												<img class="image-sq" src="{% static 'assets/images/garage.jpg' %}" alt="">
+											</div>
+										</div>
+									</div>
+
+									<!-- typography container-->
+									<a href="#" class="typo-sq">
+										<span class="typo-whitespace"></span>
+										<p class="typo-label-sq" data-label-before="" data-label-after="Изучить варианты"></p>
+										<p class="typo-title-sq">Гаражные помещения</p>
+									</a>
+
+								</div>
+							</div>
+							<!-- item-->
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+
+			</div>
+		</div>
+
+		<div class="promo-section">
+
+			<!-- content -->
+			<div class="ui container grid centered">
+				<div class="row">
+					<div class="ui twelve wide mobile ten wide tablet eight wide computer six wide large screen six wide widescreen column">
+						<div style="    background: rgba(143, 128, 98, 0.59) !important;" class="promo-content ">
+							<h2>02. Смотреть на карте</h2>
+							<p>Вы можете посмотреть все доступные для аренды помещения на нашей карте!</p>
+
+							<a href="#" class="button-sq see-through-sq"> Открыть </a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- picture -->
+			<div class="image-wrapper">
+				<div class="image-inner">
+					<img class="image-sq" src="{% static 'assets/images/promo_section/bg-big-blue.png' %}" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="ui grid container">
+			<div class="row">
+				<div class="ui column">
+
+					<div class="typo-section-sq bottom-big">
+						<div class="typo-section-header-sq">
+							<h2 style="color: #0B49A0;" class="text-align-center-sq">03. Помещения с высшим рейтингом</h2>
+
+							<p class="text-align-center-sq">Лучшие предложения для Вас</p>
+						</div>
+
+						<div class="ui grid">
+
+							<div class="twelve wide mobile two wide tablet two wide computer column">
+								<div class="property-item">
+									<div class="property-item-inner">
+
+										<div class="price-tag-sq">112 руб <span>/ сутки</span></div>
+										<a class="add-wishlist modal-ui-trigger" href="#" data-trigger-for="wishlist">
+											<i class="icon icon-add-wishlist"></i>
+										</a>
+
+										<a class="image-sq" href="#">
+                    	                    <span class="image-wrapper">
+                    	                        <span class="image-inner">
+                    	                            <img src="{% static 'assets/images/property/property_little_01.jpg' %}" alt="" class="">
+                    	                        </span>
+                    	                    </span>
+										</a>
+
+										<div class="main-details">
+											<div class="title-row">
+												<a href="#" class="title-sq">Лофт "1+1"</a>
+												<a href="#" class="avatar-sq">
+													<img src="{% static 'assets/images/avatar/avatar_01.jpg' %}" alt="">
+												</a>
+											</div>
+
+											<div class="icons-row">
+												<div class="icons-column">
+													<i class="icon icon-heart"></i> 8.6
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-account-group-5"></i> x 4
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-door-simple"></i> x 6
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-bed-double"></i> x 2
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="twelve wide mobile two wide tablet two wide computer column">
+								<div class="property-item">
+									<div class="property-item-inner">
+
+										<div class="price-tag-sq">78 руб <span>/ сутки</span></div>
+										<a class="add-wishlist modal-ui-trigger" href="#" data-trigger-for="wishlist">
+											<i class="icon icon-add-wishlist"></i>
+										</a>
+
+
+										<a class="image-sq" href="#">
+                    	                        <span class="image-wrapper">
+                    	                            <span class="image-inner">
+                    	                                <img src="{% static 'assets/images/property/property_little_02.jpg' %}" alt="" class="">
+                    	                            </span>
+                    	                        </span>
+										</a>
+
+										<div class="main-details">
+
+											<div class="title-row">
+												<a href="#" class="title-sq">Студия "Огонь"</a>
+												<a href="#" class="avatar-sq">
+													<img src="{% static 'assets/images/avatar/avatar_02.jpg' %}" alt="">
+												</a>
+											</div>
+
+											<div class="icons-row">
+												<div class="icons-column">
+													<i class="icon icon-heart"></i> 7.8
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-account-group-5"></i> x 2
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-door-simple"></i> x 3
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-bed-double"></i> x 2
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="twelve wide mobile two wide tablet two wide computer column">
+								<div class="property-item">
+									<div class="property-item-inner">
+
+										<div class="price-tag-sq">51 руб <span>/ сутки</span></div>
+										<a class="add-wishlist modal-ui-trigger" href="#" data-trigger-for="wishlist">
+											<i class="icon icon-add-wishlist"></i>
+										</a>
+
+										<a class="image-sq" href="#">
+                    	                    <span class="image-wrapper">
+                    	                        <span class="image-inner">
+                    	                            <img src="{% static 'assets/images/property/property_little_03.jpg' %}" alt="" class="">
+                    	                        </span>
+                    	                    </span>
+										</a>
+
+
+										<div class="main-details">
+
+											<div class="title-row">
+												<a href="#" class="title-sq">Офис на Таганке</a>
+												<a href="#" class="avatar-sq">
+													<img src="{% static 'assets/images/avatar/avatar_03.jpg' %}"
+														 alt="">
+												</a>
+											</div>
+
+											<div class="icons-row">
+												<div class="icons-column">
+													<i class="icon icon-heart"></i> 7.5
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-account-group-5"></i> x 2
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-door-simple"></i> x 1
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-bed-double"></i> x 3
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="twelve wide mobile two wide tablet two wide computer column">
+								<div class="property-item">
+									<div class="property-item-inner">
+
+										<div class="price-tag-sq">130 руб <span>/ сутки</span></div>
+										<a class="add-wishlist modal-ui-trigger" href="#" data-trigger-for="wishlist">
+											<i class="icon icon-add-wishlist"></i>
+										</a>
+
+										<a class="image-sq" href="#">
+                    	                    <span class="image-wrapper">
+                    	                        <span class="image-inner">
+                    	                            <img src="{% static 'assets/images/property/property_little_04.jpg' %}" alt="" class="">
+                    	                        </span>
+                    	                    </span>
+										</a>
+
+
+										<div class="main-details">
+											<div class="title-row">
+												<a href="#" class="title-sq">Кубический Лофт</a>
+												<a href="#" class="avatar-sq">
+													<img src="{% static 'assets/images/avatar/avatar_04.jpg' %}" alt="">
+												</a>
+											</div>
+
+											<div class="icons-row">
+												<div class="icons-column">
+													<i class="icon icon-heart"></i> 8.1
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-account-group-5"></i> x 2
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-door-simple"></i> x 2
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-bed-double"></i> x 2
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="twelve wide mobile two wide tablet two wide computer column">
+								<div class="property-item">
+									<div class="property-item-inner">
+
+										<div class="price-tag-sq">59 руб <span>/ сутки</span></div>
+										<a class="add-wishlist modal-ui-trigger" href="#" data-trigger-for="wishlist">
+											<i class="icon icon-add-wishlist"></i>
+										</a>
+
+										<a class="image-sq" href="#">
+                    	                    <span class="image-wrapper">
+                    	                        <span class="image-inner">
+                    	                            <img src="{% static 'assets/images/property/property_little_05.jpg' %}" alt="" class="">
+                    	                        </span>
+                    	                    </span>
+										</a>
+
+										<div class="main-details">
+
+											<div class="title-row">
+												<a href="#" class="title-sq">Класс для музыки</a>
+												<a href="#" class="avatar-sq">
+													<img src="{% static 'assets/images/avatar/avatar_05.jpg' %}" alt="">
+												</a>
+											</div>
+
+											<div class="icons-row">
+												<div class="icons-column">
+													<i class="icon icon-heart"></i> 7.5
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-account-group-5"></i> x 4
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-door-simple"></i> x 2
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-bed-double"></i> x 1
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="twelve wide mobile two wide tablet two wide computer column">
+								<div class="property-item">
+									<div class="property-item-inner">
+
+										<div class="price-tag-sq">32 руб <span>/ сутки</span></div>
+										<a class="add-wishlist modal-ui-trigger" href="#" data-trigger-for="wishlist">
+											<i class="icon icon-add-wishlist"></i>
+										</a>
+
+
+										<a class="image-sq" href="#">
+                    	                    <span class="image-wrapper">
+                    	                        <span class="image-inner">
+                    	                            <img src="{% static 'assets/images/property/property_little_06.jpg' %}" alt="" class="">
+                    	                        </span>
+                    	                    </span>
+										</a>
+
+										<div class="main-details">
+
+											<div class="title-row">
+												<a href="#" class="title-sq">Звуковая Студия</a>
+												<a href="#" class="avatar-sq">
+													<img src="{% static 'assets/images/avatar/avatar_06.jpg' %}" alt="">
+												</a>
+											</div>
+
+											<div class="icons-row">
+												<div class="icons-column">
+													<i class="icon icon-heart"></i> 7.5
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-account-group-5"></i> x 7
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-door-simple"></i> x 2
+												</div>
+												<div class="icons-column">
+													<i class="icon icon-bed-double"></i> x 2
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="ui grid container">
+			<div class="row">
+				<div class="ui column">
+					<div class="typo-section-sq bottom-big">
+
+						<div class="typo-section-header-sq">
+							<h2 style="color: #0B49A0;" class="text-align-center-sq">04. Мероприятия и Встречи</h2>
+							<p class="text-align-center-sq">Все доступные мероприятия от проверенных партнеров и организаторов! Вы можете выбрать что вам по душе:<br> фотосессия, помощь звуковика или мастер на час!</p>
+						</div>
+
+						<div class="magic-grid category-sq special-sq hover-scale">
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<div class="image-sq">
+										<div class="image-wrapper">
+											<div class="image-inner">
+												<img class="image-sq" src="{% static 'assets/images/magic_grid/magic_grid_category_special_01.png' %}" alt="">
+
+											</div>
+										</div>
+									</div>
+
+									<!-- typography container-->
+									<a href="#" class="typo-sq">
+										<p class="typo-title-sq">Психология</p>
+									</a>
+
+								</div>
+							</div>
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<div class="image-sq">
+										<div class="image-wrapper">
+											<div class="image-inner">
+												<img class="image-sq" src="{% static 'assets/images/magic_grid/magic_grid_category_special_02.jpg' %}" alt="">
+											</div>
+										</div>
+									</div>
+
+									<!-- typography container-->
+									<a href="#" class="typo-sq">
+										<p class="typo-title-sq">Медитация</p>
+									</a>
+
+								</div>
+							</div>
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<div class="image-sq">
+										<div class="image-wrapper">
+											<div class="image-inner">
+												<img class="image-sq" src="{% static 'assets/images/magic_grid/magic_grid_category_special_03.jpg' %}" alt="">
+											</div>
+										</div>
+									</div>
+
+									<!-- typography container-->
+									<a href="#" class="typo-sq">
+										<p class="typo-title-sq">Спорт</p>
+									</a>
+
+								</div>
+							</div>
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<div class="image-sq">
+										<div class="image-wrapper">
+											<div class="image-inner">
+												<img class="image-sq" src="{% static 'assets/images/magic_grid/magic_grid_category_special_04.jpg' %}" alt="">
+											</div>
+										</div>
+									</div>
+
+									<!-- typography container-->
+									<a href="#" class="typo-sq">
+										<p class="typo-title-sq">Готовка</p>
+									</a>
+
+								</div>
+							</div>
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<div class="image-sq">
+										<div class="image-wrapper">
+											<div class="image-inner">
+												<img class="image-sq" src="{% static 'assets/images/magic_grid/magic_grid_category_special_05.jpg' %}" alt="">
+											</div>
+										</div>
+									</div>
+
+									<!-- typography container-->
+									<a href="#" class="typo-sq">
+										<p class="typo-title-sq">Тренинги</p>
+									</a>
+
+								</div>
+							</div>
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<div class="image-sq">
+										<div class="image-wrapper">
+											<div class="image-inner">
+												<img class="image-sq" src="{% static 'assets/images/magic_grid/magic_grid_category_special_06.jpg' %}" alt="">
+											</div>
+										</div>
+									</div>
+
+									<!-- typography container-->
+									<a href="#" class="typo-sq">
+										<p class="typo-title-sq">Техническая помощь</p>
+									</a>
+
+								</div>
+							</div>
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<div class="image-sq">
+										<div class="image-wrapper">
+											<div class="image-inner">
+												<img class="image-sq" src="{% static 'assets/images/magic_grid/magic_grid_category_special_07.jpg' %}" alt="">
+											</div>
+										</div>
+									</div>
+
+									<!-- typography container-->
+									<a href="#" class="typo-sq">
+										<p class="typo-title-sq">Организация</p>
+									</a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="typo-section-sq bottom-big">
+						<div class="typo-section-header-sq">
+							<h2 style="color: #0B49A0;" class="text-align-center-sq">05. Новости и Наш Блог</h2>
+							<p class="text-align-center-sq"> Раздел, посвященный новостям нашего сервиса и полезным познавательным записям!</p>
+						</div>
+
+
+						<div class="magic-grid article-sq hover-scale">
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<a class="image-sq" href="#">
+                    	                <span class="image-wrapper">
+                    	                    <span class="image-inner">
+                    	                        <img class="image-sq" src="{% static 'assets/images/magic_grid/magic_grid_article_01.jpg' %}" alt="">
+                    	                    </span>
+                    	                </span>
+									</a>
+
+									<!-- typography container-->
+									<div class="typo-sq">
+										<p class="typo-label-sq" data-label-before="" data-label-after="Book a home in"></p>
+										<p class="typo-title-sq">Новость 1</p>
+										<p class="typo-desc-sq"></p>
+
+										<a style="color: #0B49A0 !important;" href="#" class="read-more-sq">подробнее<i class="icon icon-arrow-right-122"></i></a>
+									</div>
+								</div>
+							</div>
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<a class="image-sq" href="#">
+                    	                <span class="image-wrapper">
+                    	                    <span class="image-inner">
+                    	                        <img class="image-sq" src="{% static 'assets/images/magic_grid/magic_grid_article_02.jpg' %}" alt="">
+                    	                    </span>
+                    	                </span>
+									</a>
+
+									<!-- typography container-->
+									<div class="typo-sq">
+										<p class="typo-label-sq" data-label-before="" data-label-after="Book a home in"></p>
+										<p class="typo-title-sq">Новость 2</p>
+										<p class="typo-desc-sq"></p>
+
+										<a style="color: #0B49A0 !important;" href="#" class="read-more-sq">подробнее<i class="icon icon-arrow-right-122"></i></a>
+									</div>
+
+								</div>
+							</div>
+
+							<!-- item-->
+							<div class="item">
+								<div class="item-inner">
+
+									<!-- image container -->
+									<a class="image-sq" href="#">
+                    	                <span class="image-wrapper">
+                    	                    <span class="image-inner">
+                    	                        <img class="image-sq" src="{% static 'assets/images/magic_grid/magic_grid_article_03.jpg' %}" alt="">
+                    	                    </span>
+                    	                </span>
+									</a>
+
+									<!-- typography container-->
+									<div class="typo-sq">
+										<p class="typo-label-sq" data-label-before="" data-label-after="Book a home in"></p>
+										<p class="typo-title-sq">Новость 3</p>
+										<p class="typo-desc-sq"></p>
+
+
+										<a style="color: #0B49A0 !important;" href="#" class="read-more-sq">подробнее<i class="icon icon-arrow-right-122"></i></a>
+									</div>
+
+								</div>
+							</div>
+
+
+
+						</div>
+
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</div><!--end #page-wrapper-->
+<script src="{% static 'assets/library/jquery-2.2.0.min.js' %}"></script>
+<script src="{% static 'assets/library/flexmenu.js' %}"></script>
+<script src="{% static 'assets/library/nouislider.min.js' %}"></script>
+
+<script src="{% static 'assets/library/wNumb.js' %}"></script>
+
+<script src="{% static 'assets/library/jrespond.min.js' %}"></script>
+<script src="{% static 'assets/library/scrollspy.min.js' %}"></script>
+
+<script src="{% static 'assets/library/visibility.js' %}"></script>
+
+<script src="{% static 'assets/library/accordion.js' %}"></script>
+<script src="{% static 'assets/library/dropdown-custom.js' %}"></script>
+<script src="{% static 'assets/library/sticky.js' %}"></script>
+
+<script src="{% static 'assets/library/page-transition.js' %}"></script>
+<script src="{% static 'assets/library/checkbox.js' %}"></script>
+<script src="{% static 'assets/library/transition.js' %}"></script>
+<script src="{% static 'assets/library/sidebar.js' %}"></script>
+
+<script src="{% static 'assets/library/modal.js' %}"></script>
+<script src="{% static 'assets/library/dimmer.js' %}"></script>
+
+<!-- Datepicker -->
+<script src="{% static 'assets/library/popup.js' %}"></script>
+<script src="{% static 'assets/library/calendar.js' %}"></script>
+
+<!-- Slick -->
+<script src="{% static 'assets/library/slick.js' %}"></script>
+
+<script src="{% static 'assets/library/header.js' %}"></script>
+<script src="{% static 'assets/library/functions.js' %}"></script>
+
+</body>
+
+
+<!-- Mirrored from seventhqueen.com/themes/mybiz-html/mybnb/homepage.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2019 06:04:17 GMT -->
+</html>
