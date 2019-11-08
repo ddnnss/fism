@@ -1,0 +1,415 @@
+{% load static %}
+<!DOCTYPE html>
+
+
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from seventhqueen.com/themes/mybiz-html/mybnb/my_profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2019 06:04:28 GMT -->
+<head>
+	<!-- Standard Meta -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SeventhQueen" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/less/base.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/less/header.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/less/theme.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/icon/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/less/custom.css' %}">
+
+	<link rel="icon" href="{% static 'assets/images/ico/favicon.ico' %}">
+
+	<script src="{% static 'assets/library/modernizr-custom.js' %}"></script>
+
+	<title>Профиль</title>
+
+</head>
+<body class="no-transition dashboard-sq">
+    <div id="page-wrapper"> <!-- for background color & freeze on sidemenu visible -->
+
+        <!--DEFAULT HEADER-->
+
+<header style="margin-bottom: 60px" class="header-section ths header-shadow header-sticky header-slide-up equal-tablet-header-items equal-mobile-header-items header-transparent is-transparent">
+		<div class="header-content ">
+
+			<div class="ui container grid">
+				<div class="header-item header-left flex-order-tablet-second flex-order-mobile-second flex-grow-tablet-true flex-grow-mobile-true">
+
+					<a href="/" class="logo item">
+						<img src="{% static 'assets/images/logo.png' %}" srcset="{% static 'assets/images/logo.png' %} 1x, {% static 'assets/images/logo.png' %} 2x" alt="mybnb logo" class="logo-transparent">
+
+						<img src="{% static 'assets/images/logo.png' %}" srcset="{% static 'assets/images/logo.png' %} 1x, {% static 'assets/images/logo.png' %} 2x" alt="mybnb logo">
+					</a>
+
+
+				</div>
+
+				<div class="header-item header-center flex-align-left flex-order-tablet-first flex-order-mobile-first flex-grow-large-desktop-true flex-grow-desktop-true flex-grow-tablet-false flex-grow-mobile-false">
+
+				</div>
+
+				<div class="header-item header-right flex-order-tablet-third flex-order-mobile-third flex-shrink-true flex-align-right">
+
+					<!-- Sidemenu Trigger -->
+					<a class="sidemenu-trigger close-sq hamburger hamburger-spin item hidden-desktop hidden-large-desktop" data-trigger-for="menu01">
+
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+					</a>
+
+					<!-- Include Menu -->
+
+					<!-- Header Menu-->
+
+					<div class="item menu-default burger-mobile-sidemenu burger-tablet-sidemenu sidemenu-open-right icons-left profile-priority slide-out-sq dimmed flexMenu dropdown-open-right" data-burger="menu01">
+
+						<ul class="main-menu">
+
+							<li><a href="{% url 'search' %}" class="item">
+								<span>АРЕНДА ПОМЕЩЕНИЯ</span>
+							</a>
+							</li>
+
+
+
+							<li><a href="{% url 'index1' %}" class="item modal-ui-trigger" data-trigger-for="modal01">
+								<span>ГЛАВНАЯ СИНЯЯ</span>
+							</a>
+							</li>
+
+							<li><a href="#" class="item modal-ui-trigger" data-trigger-for="modal02">
+								<span>СМОТРЕТЬ НА КАРТЕ</span>
+							</a>
+							</li>
+							<li><a href="#" class="item modal-ui-trigger" data-trigger-for="modal02">
+								<span>О НАС</span>
+							</a>
+							</li>
+							<li><a href="#" class="item modal-ui-trigger" data-trigger-for="modal02">
+								<span>КОНТАКТЫ</span>
+							</a>
+							</li>
+							<li><a  class="item" data-trigger-for="modal02">
+								<span>|</span>
+							</a>
+							</li>
+							<li><a  class="item" data-trigger-for="modal02">
+								<span><img src="{% static 'assets/images/search.png' %}"></span>
+							</a>
+							</li>
+							  <li><a style="margin: 0;" href="my_profile.html" class="item" >
+                                <span><img src="{% static 'assets/images/user_1.png' %}"></span>
+                            </a>
+                            </li>
+
+
+
+						</ul>
+					</div>
+
+					<!-- End of Header Menu-->
+
+
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+   <div class="ui layout">
+       
+        <!-- grid -->
+        <div class="ui grid container">
+           
+            <div class="row">
+               
+               <div class="ui twelve wide tablet three wide computer three wide widescreen three wide large screen column">
+                   
+                    <div class="sticky-element sticky-desktop sticky-large-desktop under-ths">
+                       
+                        <div class="dashboard-sticky">
+                            <div class="dashboard-sticky-inner">
+
+                                <div class="dashboard-menu has-submenu">
+                                    <a href="#" class="item">
+                                        <i class="icon icon-side-sticky-menu"></i>
+                                    </a>
+                                    <ul class="submenu">
+    <li class="active"><a class="item" href="#">Личный кабинет</a></li>
+    <li class=""><a class="item" href="#">Мои настройки</a></li>
+    <li class=""><a class="item" href="#">Избранное</a></li>
+    <li class=""><a class="item" href="#">Купоны</a></li>
+    <li class=""><a class="item" href="#">Сообщения</a></li>
+
+    
+</ul>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+               </div>
+               
+               <div class="ui twelve wide tablet nine wide computer nine wide widescreen nine wide large screen column">
+                  
+                  <div class="typo-header-sq">
+                      <div class="ui grid">
+                          <div class="row">
+                            <div class="ui twelve wide computer column">
+                               <h2>Личный кабинет</h2>
+                            </div>
+
+                            <div class="ui twelve wide tablet eight wide computer eight wide widescreen eight wide large screen column">
+                               <ul class="inline-menu-sq list-default-sq list-style-inline-sq">
+                                    <li class="active">
+                                        <a href="#">Редактировать</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            
+                            <div class="ui twelve wide tablet four wide computer four wide widescreen four wide large screen column">
+                                <p><strong>85%</strong> Профиль заполнен</p>
+                                <div class="basic-progressbar dashboard-progressbar-sq without-percentage-sq">
+                                    <div class="inner" data-percentage="85%" style="width:58%"></div>
+                                </div>
+                            </div>
+
+                          </div>
+
+                         </div>
+                  </div>
+                  
+                   <div class="ui grid">
+                       <div class="row">
+
+                            <div class="ui twelve wide tablet six wide computer six wide widescreen six wide large screen column">
+                                <div class="my-profile-avatar-container">
+                                    <a class="avatar-sq extreme-avatar-sq verified-sq upload-sq" href="#">
+                                        <img src="{% static 'assets/images/avatar/default_avatar.jpg' %}" alt="">
+                                    </a>
+                                </div>
+                            </div> 
+
+                            <div class="ui twelve wide tablet six wide computer six wide widescreen six wide large screen column">
+
+                              <div class="div-c">
+                                    <div class="divided-column">
+                                       <label>Ф.И.О.</label>
+                                       <input type="text" placeholder="" value="Иванов И.И.">
+                                    </div>
+
+                                    <div class="divided-column">
+                                       <label>Телефон</label>
+                                       <input type="text" placeholder="" value="+7 (999) 111-22-33">
+                                    </div>
+
+                                    <div class="divided-column">
+                                       <label>Почта</label>
+                                       <input type="text" placeholder="" value="ivan@mail.ru">
+                                    </div>
+                                </div>
+
+                                <br>
+                            </div>  
+
+                            <div class="ui twelve wide tablet twelve wide computer twelve wide widescreen twelve wide large screen column">
+                                <hr class="margin-null-sq">
+                                <br>
+                            </div>
+
+                            <div class="ui twelve wide tablet twelve wide computer six wide widescreen six wide large screen column">
+                                <div class="div-c">
+                                    <div class="divided-column">
+                                       <label>Страна / Город</label>
+                                       <input type="text" placeholder="" value="Россия, Москва">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="ui twelve wide tablet twelve wide computer six wide widescreen six wide large screen column">
+                                <div class="div-c inline-3 one-label">
+                                    <label>Дата рождения</label>
+                                    <div class="divided-column">
+                                       <select class="dropdown">
+                                            <option value="0">01</option>
+                                            <option value="1">02</option>
+                                            <option value="2">03</option>
+                                            <option value="3">04</option>
+                                            <option value="4">05</option>
+                                            <option value="5">06</option>
+                                            <option value="6">07</option>
+                                            <option value="7">08</option>
+                                            <option value="8">09</option>
+                                            <option value="9">10</option>
+                                            <option value="11">...</option>
+                                            <option value="12">31</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="divided-column">
+                                       <select class="dropdown">
+                                            <option value="0">Jan</option>
+                                            <option value="1">Feb</option>
+                                            <option value="2">Mar</option>
+                                            <option value="3">Apr</option>
+                                            <option value="4">May</option>
+                                            <option value="5">Jun</option>
+                                            <option value="6">July</option>
+                                            <option value="7">Aug</option>
+                                            <option value="8">Sep</option>
+                                            <option value="9">Oct</option>
+                                            <option value="10">Nov</option>
+                                            <option value="11">Dec</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="divided-column">
+                                       <select class="dropdown">
+                                            <option value="0">2001</option>
+                                            <option value="1">2002</option>
+                                            <option value="2">2003</option>
+                                            <option value="3">2004</option>
+                                            <option value="4">2005</option>
+                                            <option value="5">2006</option>
+                                            <option value="6">2007</option>
+                                            <option value="7">2008</option>
+                                            <option value="8">2009</option>
+                                            <option value="9">2010</option>
+                                            <option value="11">...</option>
+                                            <option value="12">2031</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ui twelve wide tablet twelve wide computer six wide widescreen six wide large screen column">
+                                <div class="div-c">
+                                    <div class="divided-column">
+                                       <label>Пол</label>
+                                       <select name="dropdown" class="dropdown">
+                                            <option value="0">М</option>
+                                            <option value="1">Ж</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="ui twelve wide tablet twelve wide computer twelve wide widescreen twelve wide large screen column">
+                                <div class="div-c">
+                                    <div class="divided-column">
+                                       <label>О себе</label>
+                                       <textarea  cols="30" rows="5" placeholder="Be clear and descriptive">Информация о себе</textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="ui twelve wide tablet twelve wide computer twelve wide widescreen twelve wide large screen column">
+                                <br>
+                                <hr>
+                                <br>
+                            </div>
+
+                            <div class="ui twelve wide tablet twelve wide computer twelve wide widescreen twelve wide large screen column">
+                               <strong>Дополнительная информация</strong>
+                               <br>
+                               <br>
+
+                                <div class="div-c">
+                                    <div class="divided-column">
+                                       <label>Место учебы</label>
+                                       <input type="text" placeholder="" value="МГУ">
+                                    </div>
+                                </div>
+
+                                <div class="div-c">
+                                    <div class="divided-column">
+                                       <label>Профессия</label>
+                                       <input type="text" placeholder="" value="Строитель">
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+                      </div>
+                   </div>
+               </div>
+               
+               
+            </div>
+        </div>
+        
+        
+   </div>    
+       
+   
+    
+   <!--FOOTER-->
+
+
+    
+    </div><!--end #page-wrapper-->
+<script src="{% static 'assets/library/jquery-2.2.0.min.js' %}"></script>
+<script src="{% static 'assets/library/flexmenu.js' %}"></script>
+<script src="{% static 'assets/library/nouislider.min.js' %}"></script>
+
+<script src="{% static 'assets/library/wNumb.js' %}"></script>
+
+<script src="{% static 'assets/library/jrespond.min.js' %}"></script>
+<script src="{% static 'assets/library/scrollspy.min.js' %}"></script>
+
+<script src="{% static 'assets/library/visibility.js' %}"></script>
+
+<script src="{% static 'assets/library/accordion.js' %}"></script>
+<script src="{% static 'assets/library/dropdown-custom.js' %}"></script>
+<script src="{% static 'assets/library/sticky.js' %}"></script>
+
+<script src="{% static 'assets/library/page-transition.js' %}"></script>
+<script src="{% static 'assets/library/checkbox.js' %}"></script>
+<script src="{% static 'assets/library/transition.js' %}"></script>
+<script src="{% static 'assets/library/sidebar.js' %}"></script>
+
+<script src="{% static 'assets/library/modal.js' %}"></script>
+<script src="{% static 'assets/library/dimmer.js' %}"></script>
+
+<!-- Datepicker -->
+<script src="{% static 'assets/library/popup.js' %}"></script>
+<script src="{% static 'assets/library/calendar.js' %}"></script>
+
+<!-- Slick -->
+<script src="{% static 'assets/library/slick.js' %}"></script>
+
+<script src="{% static 'assets/library/header.js' %}"></script>
+<script src="{% static 'assets/library/functions.js' %}"></script>
+
+</body>
+
+
+<!-- Mirrored from seventhqueen.com/themes/mybiz-html/mybnb/my_profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2019 06:04:28 GMT -->
+</html>
